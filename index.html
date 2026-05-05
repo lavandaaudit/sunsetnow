@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBONARIUM · ART · SUNSET · HUB</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&family=JetBrains+Mono:wght@300;500&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg: #030305;
+            --accent: #d4af37;
+            --secondary: #ff007a;
+            --glass: rgba(0, 10, 20, 0.7);
+            --border: rgba(212, 175, 55, 0.2);
+            --font-main: 'Outfit', sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-snap-type: y mandatory;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            width: 100%;
+            background-color: var(--bg);
+            color: #fff;
+            font-family: var(--font-main);
+            overflow-x: hidden;
+        }
+
+        /* Container for sections */
+        .hub-container {
+            width: 100%;
+        }
+
+        /* Section Styling */
+        section {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            background: #000;
+            scroll-snap-align: start;
+            scroll-snap-stop: always;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
+            background: #000;
+        }
+
+        /* Custom Scrollbar */
+        body::-webkit-scrollbar {
+            width: 6px;
+        }
+        body::-webkit-scrollbar-track {
+            background: #06020a;
+        }
+        body::-webkit-scrollbar-thumb {
+            background: var(--border);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hub-container">
+        <!-- PAGE 1: SUNSET NOW -->
+        <section id="sunset">
+            <iframe src="https://lavandaaudit.github.io/ibonarium.sanset.now/" title="Ibonarium Sunset Now" scrolling="yes"></iframe>
+        </section>
+
+        <!-- PAGE 2: ART XVIII -->
+        <section id="art">
+            <iframe src="https://lavandaaudit.github.io/xviii/" title="Arslib XVIII Century Art" scrolling="yes"></iframe>
+        </section>
+    </div>
+
+</body>
+</html>
